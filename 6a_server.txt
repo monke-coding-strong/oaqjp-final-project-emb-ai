@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 from EmotionDetection.emotion_detection import emotion_detector
 
-app = Flask(__name__)
+app = Flask("EmotionDetection")
 
 @app.route("/emotionDetector")
 def sent_detector():
